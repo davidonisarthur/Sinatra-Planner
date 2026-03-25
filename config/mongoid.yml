@@ -1,0 +1,8 @@
+development:
+  clients:
+    default:
+      uri: "mongodb://<%= ENV['MONGO_USER'] %>:<%= ENV['MONGO_PASSWORD'] %>@<%= ENV['MONGO_LOCATION'] %>:27017/plans_<%= ENV['SINATRA_ENV'] %>"
+      options:
+        write:
+          w: 1
+        auth_source: admin
